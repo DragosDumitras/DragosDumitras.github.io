@@ -1,3 +1,7 @@
+var activePage = "home";
+
+// utilities functions
+
 function hide(id) {
   console.info("hide %o element", id);
   document.getElementById(id).style.display = "none";
@@ -11,10 +15,13 @@ function hideAllPages() {
 }
 
 function showPage(id) {
-  hideAllPages();
+  hide(activePage);
   var page = document.getElementById(id);
-  console.info("show %o ..", id, page);
+  console.info("show %o", id, page);
   page.style.display = "block";
+  activePage = id;
 }
 
-showPage("home");
+// start our code
+
+showPage(activePage);
