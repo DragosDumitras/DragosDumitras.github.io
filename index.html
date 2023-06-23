@@ -6,13 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dragos's CV</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
     <header>
-      <h1>Dragos Dumitras</h1>
-      <img src="photo.jpeg" alt="" height="150" />
-      <h2 id="job-title">Head of Quality Assurance @ Linnify</h2>
+      <div id="header-wrapper">
+        <div id="my-picture">
+          <img src="photo.jpeg" alt="" height="100" />
+        </div>
+        <div id="header-info">
+          <h1>Dragos Dumitras</h1>
+          <h2 id="job-title">Head of Quality Assurance @ Linnify</h2>
+        </div>
+      </div>
       <ul id="top-menu-bar">
         <li><a href="#" onclick="showPage('home')">Home</a></li>
         <li><a href="#" onclick="showPage('skills')">Skills</a></li>
@@ -105,9 +115,10 @@
     </section>
 
     <footer>
-      <a href="https://www.linkedin.com/in/dragosdumitras/" target="_blank"
-        >LinkedIn</a
-      >
+      <a href="https://www.linkedin.com/in/dragosdumitras/" target="_blank">
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        LinkedIn
+      </a>
     </footer>
     <script src="index.js"></script>
   </body>
