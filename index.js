@@ -1,4 +1,4 @@
-var activePage = "home";
+var activePage = "skills";
 
 // utilities functions
 function $(selector) {
@@ -22,12 +22,12 @@ function showPage(id) {
 
   hide(activePage);
 
-  var link = $(`#top-menu-bar a[data-page=${id}]`);
+  activePage = id;
+
+  var link = $(`#top-menu-bar a[data-page=${activePage}]`);
   link.classList.add("active");
 
-  show(id);
-
-  activePage = id;
+  show(activePage);
 }
 
 function clickOnMenu(e) {
@@ -43,7 +43,17 @@ function clickOnMenu(e) {
   }
 }
 
+function showSkills() {
+  var skills = ["HTML", "css", "JS"];
+  var htmlSkills = skills.map(function (skill) {
+    //<li class="favorite">HTML</li>
+    return `<li>${skill}</li>`;
+  });
+  var ul = $("#skills ul");
+  ul.innerHTML = htmlSkills.join("");
+}
 // start our code
 
-showPage("home");
+showPage(activePage);
 $("#top-menu-bar").addEventListener("click", clickOnMenu);
+showSkills();
