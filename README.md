@@ -17,3 +17,8 @@ To start web server use:
 To use Emoji on macOS:
 
 - `Command + Control + Space`
+
+📝 What I learn:
+
+-I learned to write events.
+-I learned to listen to general clicks on menu without putting more events.
