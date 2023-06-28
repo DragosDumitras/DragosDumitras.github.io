@@ -78,6 +78,9 @@ h2 {
   font-style: italic;
   font-weight: bold;
 }
+.form-row {
+  padding: 4px;
+}
 .favorite {
   font-weight: bold;
 }
