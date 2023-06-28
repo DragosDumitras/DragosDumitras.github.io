@@ -22,4 +22,9 @@ function printInfo() {
   console.warn("person type", typeof person, person);
 }
 
+var f1Variable = () => {
+  console.info("functie ca variabila");
+};
+
 printInfo();
+console.info("t4", typeof f1Variable);
