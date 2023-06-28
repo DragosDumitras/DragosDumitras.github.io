@@ -1,8 +1,8 @@
 [
-  { "name": "HTML", "endorcement": 10, "favorite": true },
-  { "name": "css", "endorcement": 16 },
-  { "name": "JS", "endorcement": 20, "favorite": true },
-  { "name": "Confluence", "endorcement": 10 },
-  { "name": "Cypress", "endorcement": 7 },
-  { "name": "JIRA", "endorcement": 18, "favorite": true }
+  { "name": "HTML", "endorcements": 10, "favorite": true },
+  { "name": "css", "endorcements": 16 },
+  { "name": "JS", "endorcements": 20, "favorite": true },
+  { "name": "Confluence", "endorcements": 13 },
+  { "name": "Cypress", "endorcements": 7 },
+  { "name": "JIRA", "endorcements": 18, "favorite": true }
 ]
