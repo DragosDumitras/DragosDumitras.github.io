@@ -1,5 +1,8 @@
 [
-  { "name": "HTML", "favorite": true },
-  { "name": "css" },
-  { "name": "JS", "favorite": true }
+  { "name": "HTML", "endorcement": 10, "favorite": true },
+  { "name": "css", "endorcement": 16 },
+  { "name": "JS", "endorcement": 20, "favorite": true },
+  { "name": "Confluence", "endorcement": 10 },
+  { "name": "Cypress", "endorcement": 7 },
+  { "name": "JIRA", "endorcement": 18, "favorite": true }
 ]

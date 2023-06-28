@@ -36,7 +36,7 @@ function clickOnMenu(e) {
   if (link) {
     var id = link.dataset.page;
     //console.warn("click %o menu", e.target.getAttribute("data-page"));
-    //console.warn("click %o menu", id);
+    console.warn("click %o menu", id);
     if (id) {
       showPage(id);
     }
@@ -46,8 +46,9 @@ function clickOnMenu(e) {
 function showSkills(skills) {
   var htmlSkills = skills.map(function (skill) {
     //<li class="favorite">HTML</li>
+    console.info("skill", skill);
     var cls = skill.favorite ? "favorite" : "";
-    return `<li class="${cls}">${skill.name}</li>`;
+    return `<li class="${cls}">${skill.name} <span>- ${skill.endorcement}</span></li>`;
   });
   var ul = $("#skills ul");
   ul.innerHTML = htmlSkills.join("");
